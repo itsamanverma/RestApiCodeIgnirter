@@ -31,10 +31,11 @@ class My_test extends CI_Controller
         echo "<strong> My Name is</strong> =" .$name; 
 		//echo "<br>LastName =" .$lastName;
     }
-    // public function show()
-    // {
-    //     $this->load->model('authentication_from_google','google');
-    //     $name = $this->google->firstName();
-    //     echo "<strong> Name:- </strong> =" .$name; 
-    // }
+    public function show1()
+    {
+        /* in codeigniter we have the facility to make Alias   */
+        $this->load->model('authentication_from_google','google');
+        $name = $this->google->userData();
+        echo "<strong> Name:- </strong> =" .$name; 
+    }
 }
