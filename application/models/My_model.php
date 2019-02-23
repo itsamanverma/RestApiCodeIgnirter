@@ -14,8 +14,9 @@ class My_model extends CI_Model
     }
     /**
      * here we do all database connections & API
-     * call example like authentication google ,facebook, or loading some external
-     * ApI ,this the actual database  
+     * call example like authentication from google ,facebook, or loading some external
+     * ApI ,this the actual backend application ,so all the database connections loading
+     * data from databases & external ApI would be done by Model
      */
 }
 ?>
