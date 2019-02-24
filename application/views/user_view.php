@@ -22,21 +22,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
         </tr>
         <?php
         foreach ($userArray as $key => $value) {
-            echo "<pre>";
-            print_r($value);
-            echo "</pre>";
-
-            // echo "<tr>
-            //         <td>".$value['id']."</td>
-            //         <td>".$value['username']."</td>
-            //         <td>".$value['company']."</td>
-            //         </tr>";
+            // echo "<pre>";
+            // print_r($value);
+            // echo "</pre>";
 
             echo "<tr>
-                    <td>" . $value->id . "</td>
-                    <td>" . $value->username . "</td>
-                    <td>" . $value->company . "</td>
+                    <td>".$value['id']."</td>
+                    <td>".$value['username']."</td>
+                    <td>".$value['company']."</td>
                     </tr>";
+
+            // echo "<tr>
+            //         <td>" . $value->id . "</td>
+            //         <td>" . $value->username . "</td>
+            //         <td>" . $value->company . "</td>
+            //         </tr>";
         }
         ?>
         <!-- <tr>
