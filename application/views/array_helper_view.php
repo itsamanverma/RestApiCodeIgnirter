@@ -21,7 +21,7 @@
     <p>1. element()</p>
     <?php
     //echo element($key,$array);
-    echo element("meta_desc",$seo);
+   // echo element("meta_desc",$seo);
     ?> -->
 
     <!-- /* function to give the discription for random key*/
@@ -34,7 +34,7 @@
     <!-- function to gives the description more than one keys -->
     <p>3. elements()</p>
     <?php
-    $new_array = elements(array("meta_desc","meta_key"),$seo);
+ //   $new_array = elements(array("meta_desc","meta_key"),$seo);
     print_r($new_array);
     ?>
 </body>

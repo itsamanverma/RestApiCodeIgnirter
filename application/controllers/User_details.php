@@ -24,7 +24,7 @@
         //echo "<strong><i>test</i></strong> the User Controller";
         
         /*every time we need to load the model so instead of autoload the model */
-        //$this->load->model('user_model');
+        $this->load->model('user_model');
         $data['userArray'] = $this->user_model->return_users();
         $this->load->view('user_view',$data);
     }
