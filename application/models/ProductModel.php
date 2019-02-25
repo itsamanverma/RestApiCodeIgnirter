@@ -10,6 +10,7 @@ class ProductModel extends CI_Model{
         $qe = "SELECT * FROM test ";
        $data = $this->db->query ("SELECT * FROM test ")->result_array();
         print_r($data);
+   
         foreach ($data as $record) {
             echo $record->id."   ";
             echo $record->name."   ";
@@ -18,13 +19,14 @@ class ProductModel extends CI_Model{
             
             // echo $row['name']."<br />\n";
         }
+
     }
 
     /**
      * function to write query for get method
      */
     public function find($id){
-       $data =  $this->db->query("SELECT * FROM test WHERE id = '$id'")->row(); 
+       $data =  $this->db->query("SELECT * FROM test WHERE id = '$id'")->row()->result(); 
         // $this->db->where('id',$id);
         // return $this->db->get('product')->row();
         return $data;

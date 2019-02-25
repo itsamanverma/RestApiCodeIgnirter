@@ -58,10 +58,10 @@ $route['detail'] ='User_details/detail';
 $route['hello'] = 'welcome/hello';
 $route['kumar'] = 'welcome/kumar';
 
-//$route['index'] ='Product/index';
-//$route['product/(:any)']='product/index/$1';
-//$route['(:any)'] ='product/index/$1';
-//$route['(:num)'] = 'product/index/$1';
+// $route['index'] ='Product/index';
+// $route['product/(:any)']='product/index/$1';
+// $route['(:any)'] ='product/index/$1';
+// $route['(:num)'] = 'product/index/$1';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 

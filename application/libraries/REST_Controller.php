@@ -1575,7 +1575,7 @@ abstract class REST_Controller extends CI_Controller {
             'pass' => $this->config->item('bindpw', 'ldap'),
             'basedn' => $this->config->item('basedn', 'ldap'),
         ];
-        log_message('debug', 'LDAP Auth: Connect to ' . (isset($ldaphost) ? $ldaphost : '[ldap not configured]'));
+        //log_message('debug', 'LDAP Auth: Connect to ' . (isset($ldaphost) ? $ldaphost : '[ldap not configured]'));
         // Connect to the ldap server
         $ldapconn = ldap_connect($ldap['host'], $ldap['port']);
         if ($ldapconn)
@@ -1803,9 +1803,9 @@ abstract class REST_Controller extends CI_Controller {
             $this->_force_login($unique_id);
         }
         $md5 = md5(strtoupper($this->request->method).':'.$digest['uri']);
-        $valid_response = md5($username.':'.$digest['nonce'].':'.$digest['nc'].':'.$digest['cnonce'].':'.$digest['qop'].':'.$md5);
+       // $valid_response = md5($username.':'.$digest['nonce'].':'.$digest['nc'].':'.$digest['cnonce'].':'.$digest['qop'].':'.$md5);
         // Check if the string don't compare (case-insensitive)
-        if (strcasecmp($digest['response'], $valid_response) !== 0)
+        //if (strcasecmp($digest['response'], $valid_response) !== 0)
         {
             // Display an error response
             $this->response([

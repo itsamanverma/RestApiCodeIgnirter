@@ -281,7 +281,7 @@ class Format {
         // Load the table library
         $this->_CI->load->library('table');
 
-        $this->_CI->table->set_heading($headings);
+       // $this->_CI->table->set_heading($headings);
 
         foreach ($data as $row)
         {
