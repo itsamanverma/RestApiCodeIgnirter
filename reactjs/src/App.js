@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Greet from './components/Greet'
+import Welcome from './components/Welcome'
+import Hello from './components/Hello'
+// import Message from './components/Message'
 
 class App extends Component {
   render() {
@@ -23,9 +26,17 @@ class App extends Component {
           >
             Learn React
           </a>
-        </header> */}
-         <Greet>  </Greet>  
-       
+          </header> */}
+        <Greet name="Swarna" heroName="Batman">
+         <p>This the Children props</p> </Greet>
+        < Greet name="Mini" heroName="Superman">
+        <button>Action</button></ Greet>
+        < Greet name="Aayushi" heroName="Spieder-man" />
+        
+        <Welcome name = "Swarna" heroName="Batman" />
+        <Welcome name="Mini" heroName="Superman"/>
+        <Welcome name = "Aayushi" heroName="Spieder-man"/>
+        {/* <Hello /> */}
       </div>
     );
   }
