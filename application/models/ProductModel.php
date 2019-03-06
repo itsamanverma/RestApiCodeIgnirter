@@ -8,7 +8,7 @@ class ProductModel extends CI_Model{
      */
     public function findall(){
         $qe = "SELECT * FROM test ";
-       $data = $this->db->query ("SELECT * FROM test ")->result();
+        $data = $this->db->query ("SELECT * FROM test ")->result();
         print_r($data);
    
         foreach ($data as $record) {
@@ -19,7 +19,6 @@ class ProductModel extends CI_Model{
             
             // echo $row['name']."<br />\n";
         }
-
     }
 
     /**
