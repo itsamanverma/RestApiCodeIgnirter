@@ -29,14 +29,15 @@ class Product extends REST_Controller
         parent::__construct();
     }
 
-
     /**
      * function to print all data from database using get restapi
      */
     public function find_all_get()
     {
+        
+
         $data = json_encode($this->ProductModel->findall());
-        // print_r($data);
+         print_r($data);
     }
 
     /**
@@ -53,6 +54,7 @@ class Product extends REST_Controller
 
     public function create_post()
     {
+        
         $prod = array(
             $this->post('id'),
             $this->post('name'),

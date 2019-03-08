@@ -54,7 +54,7 @@ class ProductModel extends CI_Model{
     /**
      * function to write query for put method
      */
-    public function update($id,$data){
+        public function update($id,$data){
         print_r($data);
         $name = $data[0];
         $price = $data[1];
@@ -63,7 +63,7 @@ class ProductModel extends CI_Model{
         ProductModel::queryRun($query); 
     }
 
-    public function delete($id){
+        public function delete($id){
         $query = $this->db->query("DELETE from test where id='".$id ."'  ");
         ProductModel::queryRun($query);
     }

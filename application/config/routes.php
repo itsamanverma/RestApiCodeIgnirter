@@ -72,5 +72,15 @@ $route['findbyid/(:num)'] = 'Product/find/$1';
 $route['update'] = 'Product/update';
 $route['delete/(:num)'] = 'Product/delete/$1';
  
- 
+$route['users'] = 'user';
+$route['edituser'] = 'api/edituser';
+$route['user/(:num)'] = 'api/get/$1';
+$route['user/del/(:num)'] = 'api/deleteuser/$1';
+$route["users/login"] = 'user/login';
+$route["users/register"] = 'user/register';
+$route["users/valid"] = "user/validation";
+$route["users/plogin"] = "user/plogin";
 
+$route['login_post']="api/Authentication/login_post";
+$route['register'] ="Register/insertUser";
+$route['login'] = "Register/selectuser";
