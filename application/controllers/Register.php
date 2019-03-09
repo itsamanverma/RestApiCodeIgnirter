@@ -33,6 +33,7 @@ class Register extends CI_Controller
         $email = $_POST['Emailid'];
         $password = $_POST['password'];
         $res = $this->refService->login($email, $password);
+        
         return $res;
     }
-}
+}  
