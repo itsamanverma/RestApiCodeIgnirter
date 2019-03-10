@@ -82,5 +82,5 @@ $route["users/valid"] = "user/validation";
 $route["users/plogin"] = "user/plogin";
 
 $route['login_post']='api/Authentication/login_post';
-$route['register'] ='Register/insertUser';
-$route['login'] = 'Register/selectuser';
+$route['register'] ='AccountController/registerUser';
+$route['login'] = 'AccountController/login';
