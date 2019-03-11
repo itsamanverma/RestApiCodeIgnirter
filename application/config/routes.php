@@ -84,3 +84,4 @@ $route["users/plogin"] = "user/plogin";
 $route['login_post']='api/Authentication/login_post';
 $route['register'] ='AccountController/registerUser';
 $route['login'] = 'AccountController/login';
+$route['forgotpassword']='AccountController/forgotpassword';

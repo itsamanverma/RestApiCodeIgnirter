@@ -1,0 +1,6 @@
+{
+    "require": {
+        "swiftmailer/swiftmailer": "@stable",
+        "php-amqplib/php-amqplib": "^2.8"
+    }
+}
